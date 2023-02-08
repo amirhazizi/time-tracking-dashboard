@@ -15,84 +15,215 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
-  <body>
-    Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-    <!-- daily -->
-    Previous - 7hrs
-    <!-- daily -->
-    32hrs
-    <!-- weekly -->
-    Previous - 36hrs
-    <!-- weekly -->
-    103hrs
-    <!-- monthly -->
-    Previous - 128hrs
-    <!-- monthly -->
-
-    Play 1hr
-    <!-- daily -->
-    Previous - 2hrs
-    <!-- daily -->
-    10hrs
-    <!-- weekly -->
-    Previous - 8hrs
-    <!-- weekly -->
-    23hrs
-    <!-- monthly -->
-    Previous - 29hrs
-    <!-- monthly -->
-
-    Study 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 7hrs
-    <!-- weekly -->
-    13hrs
-    <!-- monthly -->
-    Previous - 19hrs
-    <!-- monthly -->
-
-    Exercise 1hr
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 5hrs
-    <!-- weekly -->
-    11hrs
-    <!-- monthly -->
-    Previous - 18hrs
-    <!-- monthly -->
-
-    Social 1hr
-    <!-- daily -->
-    Previous - 3hrs
-    <!-- daily -->
-    5hrs
-    <!-- weekly -->
-    Previous - 10hrs
-    <!-- weekly -->
-    21hrs
-    <!-- monthly -->
-    Previous - 23hrs
-    <!-- monthly -->
-
-    Self Care 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    2hrs
-    <!-- weekly -->
-    Previous - 2hrs
-    <!-- weekly -->
-    7hrs
-    <!-- monthly -->
-    Previous - 11hrs
-    <!-- monthly -->
+  <body class="bg-cl_Verydarkblue">
+    <main class="min-h-screen space-y-5 container mx-auto px-4">
+      <!-- user info -->
+      <div class="rounded-xl bg-cl_Darkblue">
+        <!-- user detail -->
+        <div class="flex items-center space-x-4 bg-cl_Blue rounded-xl p-7">
+          <img
+            class="h-16 border-4 rounded-full"
+            src="./images/image-jeremy.png"
+            alt="image-jeremy.png"
+          />
+          <div class="text-cl_PaleBlue">
+            <p class="text-ms opacity-70">Report for</p>
+            <h1 class="user-title font-light brightness-150">Jeremy Robson</h1>
+          </div>
+        </div>
+        <!-- button navigation -->
+        <ul
+          class="text-cl_Desaturatedblue flex justify-between p-8 text-base py-5 pr-4"
+        >
+          <li><button>Daily</button></li>
+          <li><button>Weekly</button></li>
+          <li><button>Monthly</button></li>
+        </ul>
+      </div>
+      <!-- tracing content -->
+      <div class="w-full space-y-5">
+        <!-- work -->
+        <div
+          class="relative bg-cl_Lightred w-full h-40 overflow-hidden rounded-xl"
+        >
+          <!-- float icon -->
+          <img
+            class="absolute top-2 h-20 -right-1 -translate-y-1/4 -translate-x-1/4"
+            src="./images/icon-work.svg"
+            alt="icon-work.svg"
+          />
+          <!-- float desc -->
+          <div
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+          >
+            <!-- title -->
+            <div>
+              <h2 class="text-lg">Work</h2>
+              <h1 class="text-3xl font-light">32hrs</h1>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col justify-between pt-3 pb-1">
+              <button class="self-end">
+                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
+              </button>
+              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+                Last Week - 36hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- play -->
+        <div
+          class="relative bg-cl_Softblue w-full h-40 overflow-hidden rounded-xl"
+        >
+          <!-- float icon -->
+          <img
+            class="absolute top-4 h-20 -right-1 -translate-y-1/4 -translate-x-1/4"
+            src="./images/icon-play.svg"
+            alt="icon-work.svg"
+          />
+          <!-- float desc -->
+          <div
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+          >
+            <!-- title -->
+            <div>
+              <h2 class="text-lg">Play</h2>
+              <h1 class="text-3xl font-light">10hrs</h1>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col justify-between pt-3 pb-1">
+              <button class="self-end">
+                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
+              </button>
+              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+                Last Week - 8hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- study -->
+        <div
+          class="relative bg-cl_Lightred_2 w-full h-40 overflow-hidden rounded-xl"
+        >
+          <!-- float icon -->
+          <img
+            class="absolute top-3 h-20 -right-1 -translate-y-1/4 -translate-x-1/4"
+            src="./images/icon-study.svg"
+            alt="icon-work.svg"
+          />
+          <!-- float desc -->
+          <div
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+          >
+            <!-- title -->
+            <div>
+              <h2 class="text-lg">Study</h2>
+              <h1 class="text-3xl font-light">4hrs</h1>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col justify-between pt-3 pb-1">
+              <button class="self-end">
+                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
+              </button>
+              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+                Last Week - 7hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- exercise -->
+        <div
+          class="relative bg-cl_Limegreen w-full h-40 overflow-hidden rounded-xl"
+        >
+          <!-- float icon -->
+          <img
+            class="absolute top-3 h-16 -right-1 -translate-y-1/4 -translate-x-1/4"
+            src="./images/icon-exercise.svg"
+            alt="icon-work.svg"
+          />
+          <!-- float desc -->
+          <div
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+          >
+            <!-- title -->
+            <div>
+              <h2 class="text-lg">Exercise</h2>
+              <h1 class="text-3xl font-light">4hrs</h1>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col justify-between pt-3 pb-1">
+              <button class="self-end">
+                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
+              </button>
+              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+                Last Week - 5hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- social -->
+        <div
+          class="relative bg-cl_Violet w-full h-40 overflow-hidden rounded-xl"
+        >
+          <!-- float icon -->
+          <img
+            class="absolute top-3 h-24 -right-1 -translate-y-1/4 -translate-x-1/4"
+            src="./images/icon-social.svg"
+            alt="icon-work.svg"
+          />
+          <!-- float desc -->
+          <div
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+          >
+            <!-- title -->
+            <div>
+              <h2 class="text-lg">Social</h2>
+              <h1 class="text-3xl font-light">5hrs</h1>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col justify-between pt-3 pb-1">
+              <button class="self-end">
+                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
+              </button>
+              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+                Last Week - 10hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- self care -->
+        <div
+          class="relative bg-cl_Softorange w-full h-40 overflow-hidden rounded-xl"
+        >
+          <!-- float icon -->
+          <img
+            class="absolute top-1 h-20 -right-1 -translate-y-1/4 -translate-x-1/4"
+            src="./images/icon-self-care.svg"
+            alt="icon-work.svg"
+          />
+          <!-- float desc -->
+          <div
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+          >
+            <!-- title -->
+            <div>
+              <h2 class="text-lg">Self Care</h2>
+              <h1 class="text-3xl font-light">2hrs</h1>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col justify-between pt-3 pb-1">
+              <button class="self-end">
+                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
+              </button>
+              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+                Last Week - 2hrs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- footer -->
     <footer
