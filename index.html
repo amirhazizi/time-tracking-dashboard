@@ -15,25 +15,29 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
-  <body class="bg-cl_Verydarkblue">
-    <main class="min-h-screen space-y-5 container mx-auto px-4">
+  <body class="bg-cl_Verydarkblue grid place-items-center min-h-screen">
+    <main
+      class="space-y-5 container lg:max-w-3xl mx-auto px-4 lg:px-0 lg:space-y-0 my-28 lg:my-0"
+    >
       <!-- user info -->
-      <div class="rounded-xl bg-cl_Darkblue">
+      <div class="rounded-xl bg-cl_Darkblue lg:h-full">
         <!-- user detail -->
-        <div class="flex items-center space-x-4 bg-cl_Blue rounded-xl p-7">
+        <div
+          class="flex items-center space-x-4 bg-cl_Blue rounded-xl p-7 lg:flex-col lg:items-start lg:space-x-0 lg:space-y-6 lg:p-6 lg:h-2/3"
+        >
           <img
             class="h-16 border-4 rounded-full"
             src="./images/image-jeremy.png"
             alt="image-jeremy.png"
           />
-          <div class="text-cl_PaleBlue">
-            <p class="text-ms opacity-70">Report for</p>
+          <div class="text-cl_PaleBlue lg:space-y-1">
+            <p class="text-ms opacity-70 lg:text-xs lg:mr-5">Report for</p>
             <h1 class="user-title font-light brightness-150">Jeremy Robson</h1>
           </div>
         </div>
         <!-- button navigation -->
         <ul
-          class="text-cl_Desaturatedblue flex justify-between p-8 text-base py-5 pr-4"
+          class="text-cl_Desaturatedblue flex justify-between p-8 py-5 pr-4 lg:flex-col lg:space-y-2 lg:text-sm lg:px-5"
         >
           <li><button>Daily</button></li>
           <li><button>Weekly</button></li>
@@ -41,187 +45,241 @@
         </ul>
       </div>
       <!-- tracing content -->
-      <div class="w-full space-y-5">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         <!-- work -->
         <div
-          class="relative bg-cl_Lightred w-full h-40 overflow-hidden rounded-xl"
+          class="relative bg-cl_Lightred w-full h-40 overflow-hidden rounded-xl lg:h-44"
         >
           <!-- float icon -->
           <img
-            class="absolute top-2 h-20 -right-1 -translate-y-1/4 -translate-x-1/4"
+            class="absolute top-2 h-20 right-0 -translate-y-1/4 -translate-x-1/4 lg:h-14"
             src="./images/icon-work.svg"
             alt="icon-work.svg"
           />
           <!-- float desc -->
           <div
-            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex flex-col justify-between p-7 rounded-xl space-y-1 lg:p-5"
           >
             <!-- title -->
-            <div>
-              <h2 class="text-lg">Work</h2>
-              <h1 class="text-3xl font-light">32hrs</h1>
+            <div class="flex justify-between lg:mb-4">
+              <h2 class="text-lg lg:text-sm">Work</h2>
+              <button>
+                <img
+                  class="lg:h-1"
+                  src="./images/icon-ellipsis.svg"
+                  alt="icon-ellipsis.svg"
+                />
+              </button>
             </div>
             <!-- text -->
-            <div class="flex flex-col justify-between pt-3 pb-1">
-              <button class="self-end">
-                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
-              </button>
-              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+            <div
+              class="flex justify-between items-center lg:flex-col lg:items-start"
+            >
+              <h1 class="text-3xl font-light lg:text-4xl">32hrs</h1>
+              <p
+                class="text-sm brightness-150 text-cl_Desaturatedblue mt-2 lg:text-xs"
+              >
                 Last Week - 36hrs
               </p>
             </div>
           </div>
         </div>
+        <!-- end of work -->
         <!-- play -->
         <div
-          class="relative bg-cl_Softblue w-full h-40 overflow-hidden rounded-xl"
+          class="relative bg-cl_Softblue w-full h-40 overflow-hidden rounded-xl lg:h-44"
         >
           <!-- float icon -->
           <img
-            class="absolute top-4 h-20 -right-1 -translate-y-1/4 -translate-x-1/4"
+            class="absolute top-2 h-20 right-0 -translate-y-1/4 -translate-x-1/4 lg:h-14"
             src="./images/icon-play.svg"
             alt="icon-work.svg"
           />
           <!-- float desc -->
           <div
-            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex flex-col justify-between p-7 rounded-xl space-y-1 lg:p-5"
           >
             <!-- title -->
-            <div>
-              <h2 class="text-lg">Play</h2>
-              <h1 class="text-3xl font-light">10hrs</h1>
+            <div class="flex justify-between lg:mb-4">
+              <h2 class="text-lg lg:text-sm">Play</h2>
+              <button>
+                <img
+                  class="lg:h-1"
+                  src="./images/icon-ellipsis.svg"
+                  alt="icon-ellipsis.svg"
+                />
+              </button>
             </div>
             <!-- text -->
-            <div class="flex flex-col justify-between pt-3 pb-1">
-              <button class="self-end">
-                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
-              </button>
-              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+            <div
+              class="flex justify-between items-center lg:flex-col lg:items-start"
+            >
+              <h1 class="text-3xl font-light lg:text-4xl">10hrs</h1>
+              <p
+                class="text-sm brightness-150 text-cl_Desaturatedblue mt-2 lg:text-xs"
+              >
                 Last Week - 8hrs
               </p>
             </div>
           </div>
         </div>
+        <!-- end of play -->
         <!-- study -->
         <div
-          class="relative bg-cl_Lightred_2 w-full h-40 overflow-hidden rounded-xl"
+          class="relative bg-cl_Lightred_2 w-full h-40 overflow-hidden rounded-xl lg:h-44"
         >
           <!-- float icon -->
           <img
-            class="absolute top-3 h-20 -right-1 -translate-y-1/4 -translate-x-1/4"
+            class="absolute top-2 h-20 right-0 -translate-y-1/4 -translate-x-1/4 lg:h-14"
             src="./images/icon-study.svg"
             alt="icon-work.svg"
           />
           <!-- float desc -->
           <div
-            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex flex-col justify-between p-7 rounded-xl space-y-1 lg:p-5"
           >
             <!-- title -->
-            <div>
-              <h2 class="text-lg">Study</h2>
-              <h1 class="text-3xl font-light">4hrs</h1>
+            <div class="flex justify-between lg:mb-4">
+              <h2 class="text-lg lg:text-sm">Study</h2>
+              <button>
+                <img
+                  class="lg:h-1"
+                  src="./images/icon-ellipsis.svg"
+                  alt="icon-ellipsis.svg"
+                />
+              </button>
             </div>
             <!-- text -->
-            <div class="flex flex-col justify-between pt-3 pb-1">
-              <button class="self-end">
-                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
-              </button>
-              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+            <div
+              class="flex justify-between items-center lg:flex-col lg:items-start"
+            >
+              <h1 class="text-3xl font-light lg:text-4xl">4hrs</h1>
+              <p
+                class="text-sm brightness-150 text-cl_Desaturatedblue mt-2 lg:text-xs"
+              >
                 Last Week - 7hrs
               </p>
             </div>
           </div>
         </div>
+        <!-- end of study -->
         <!-- exercise -->
         <div
-          class="relative bg-cl_Limegreen w-full h-40 overflow-hidden rounded-xl"
+          class="relative bg-cl_Limegreen w-full h-40 overflow-hidden rounded-xl lg:h-44"
         >
           <!-- float icon -->
           <img
-            class="absolute top-3 h-16 -right-1 -translate-y-1/4 -translate-x-1/4"
+            class="absolute top-2 h-16 -right-1 -translate-y-1/4 -translate-x-1/4 lg:h-12"
             src="./images/icon-exercise.svg"
             alt="icon-work.svg"
           />
           <!-- float desc -->
           <div
-            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex flex-col justify-between p-7 rounded-xl space-y-1 lg:p-5"
           >
             <!-- title -->
-            <div>
-              <h2 class="text-lg">Exercise</h2>
-              <h1 class="text-3xl font-light">4hrs</h1>
+            <div class="flex justify-between lg:mb-4">
+              <h2 class="text-lg lg:text-sm">Exercise</h2>
+              <button>
+                <img
+                  class="lg:h-1"
+                  src="./images/icon-ellipsis.svg"
+                  alt="icon-ellipsis.svg"
+                />
+              </button>
             </div>
             <!-- text -->
-            <div class="flex flex-col justify-between pt-3 pb-1">
-              <button class="self-end">
-                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
-              </button>
-              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+            <div
+              class="flex justify-between items-center lg:flex-col lg:items-start"
+            >
+              <h1 class="text-3xl font-light lg:text-4xl">4hrs</h1>
+              <p
+                class="text-sm brightness-150 text-cl_Desaturatedblue mt-2 lg:text-xs"
+              >
                 Last Week - 5hrs
               </p>
             </div>
           </div>
         </div>
+        <!-- end of exercise -->
         <!-- social -->
         <div
-          class="relative bg-cl_Violet w-full h-40 overflow-hidden rounded-xl"
+          class="relative bg-cl_Violet w-full h-40 overflow-hidden rounded-xl lg:h-44"
         >
           <!-- float icon -->
           <img
-            class="absolute top-3 h-24 -right-1 -translate-y-1/4 -translate-x-1/4"
+            class="absolute top-2 h-20 right-0 -translate-y-1/4 -translate-x-1/4 lg:h-16"
             src="./images/icon-social.svg"
             alt="icon-work.svg"
           />
           <!-- float desc -->
           <div
-            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex flex-col justify-between p-7 rounded-xl space-y-1 lg:p-5"
           >
             <!-- title -->
-            <div>
-              <h2 class="text-lg">Social</h2>
-              <h1 class="text-3xl font-light">5hrs</h1>
+            <div class="flex justify-between lg:mb-4">
+              <h2 class="text-lg lg:text-sm">Social</h2>
+              <button>
+                <img
+                  class="lg:h-1"
+                  src="./images/icon-ellipsis.svg"
+                  alt="icon-ellipsis.svg"
+                />
+              </button>
             </div>
             <!-- text -->
-            <div class="flex flex-col justify-between pt-3 pb-1">
-              <button class="self-end">
-                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
-              </button>
-              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+            <div
+              class="flex justify-between items-center lg:flex-col lg:items-start"
+            >
+              <h1 class="text-3xl font-light lg:text-4xl">5hrs</h1>
+              <p
+                class="text-sm brightness-150 text-cl_Desaturatedblue mt-2 lg:text-xs"
+              >
                 Last Week - 10hrs
               </p>
             </div>
           </div>
         </div>
+        <!-- end of social -->
         <!-- self care -->
         <div
-          class="relative bg-cl_Softorange w-full h-40 overflow-hidden rounded-xl"
+          class="relative bg-cl_Softorange w-full h-40 overflow-hidden rounded-xl lg:h-44"
         >
           <!-- float icon -->
           <img
-            class="absolute top-1 h-20 -right-1 -translate-y-1/4 -translate-x-1/4"
+            class="absolute top-1 h-20 right-0 -translate-y-1/4 -translate-x-1/4 lg:h-12"
             src="./images/icon-self-care.svg"
             alt="icon-work.svg"
           />
           <!-- float desc -->
           <div
-            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex justify-between p-7 rounded-xl"
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 text-white bg-cl_Darkblue w-full flex flex-col justify-between p-7 rounded-xl space-y-1 lg:p-5"
           >
             <!-- title -->
-            <div>
-              <h2 class="text-lg">Self Care</h2>
-              <h1 class="text-3xl font-light">2hrs</h1>
+            <div class="flex justify-between lg:mb-4">
+              <h2 class="text-lg lg:text-sm">Self Care</h2>
+              <button>
+                <img
+                  class="lg:h-1"
+                  src="./images/icon-ellipsis.svg"
+                  alt="icon-ellipsis.svg"
+                />
+              </button>
             </div>
             <!-- text -->
-            <div class="flex flex-col justify-between pt-3 pb-1">
-              <button class="self-end">
-                <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis.svg" />
-              </button>
-              <p class="text-sm brightness-150 text-cl_Desaturatedblue">
+            <div
+              class="flex justify-between items-center lg:flex-col lg:items-start"
+            >
+              <h1 class="text-3xl font-light lg:text-4xl">2hrs</h1>
+              <p
+                class="text-sm brightness-150 text-cl_Desaturatedblue mt-2 lg:text-xs"
+              >
                 Last Week - 2hrs
               </p>
             </div>
           </div>
         </div>
+        <!-- end of work -->
       </div>
     </main>
 

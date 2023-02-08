@@ -9,3 +9,22 @@ html {
 .user-title {
     font-size: 1.37rem;
 }
+
+main {
+    display: grid;
+}
+
+@media (min-width:976px) {
+    main {
+        gap: 1.5rem;
+        grid-template-columns: 1fr 3fr;
+        align-items: start;
+    }
+
+    .user-title {
+        font-size: 1.9rem;
+        line-height: 1.2;
+
+    }
+
+}
