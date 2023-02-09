@@ -786,11 +786,6 @@ video {
   text-align: center;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -863,6 +858,10 @@ main {
   font-size: 1.85rem;
 }
 
+.selected-btn {
+  color: white;
+}
+
 @media (min-width:976px) {
   main {
     gap: 1.5rem;
@@ -897,32 +896,16 @@ main {
     margin-bottom: 0px;
   }
 
+  .lg\:-mt-1 {
+    margin-top: -0.25rem;
+  }
+
   .lg\:mb-1 {
     margin-bottom: 0.25rem;
   }
 
-  .lg\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
   .lg\:mr-5 {
     margin-right: 1.25rem;
-  }
-
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .lg\:mb-2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .lg\:mt-1 {
-    margin-top: 0.25rem;
-  }
-
-  .lg\:-mt-1 {
-    margin-top: -0.25rem;
   }
 
   .lg\:h-1 {
@@ -953,10 +936,6 @@ main {
     height: 100%;
   }
 
-  .lg\:h-3\/4 {
-    height: 75%;
-  }
-
   .lg\:max-w-3xl {
     max-width: 48rem;
   }
@@ -971,10 +950,6 @@ main {
 
   .lg\:items-start {
     align-items: flex-start;
-  }
-
-  .lg\:justify-start {
-    justify-content: flex-start;
   }
 
   .lg\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1023,11 +998,6 @@ main {
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .lg\:text-sm {

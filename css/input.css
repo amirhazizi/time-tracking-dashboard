@@ -22,6 +22,10 @@ main {
     font-size: 1.85rem;
 }
 
+.selected-btn {
+    color: white;
+}
+
 @media (min-width:976px) {
     main {
         gap: 1.5rem;

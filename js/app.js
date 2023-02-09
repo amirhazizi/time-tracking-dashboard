@@ -1,37 +1,34 @@
+// selection
 const triggerBtn = document.querySelectorAll(".routine-btn")
+const selectionBtn = document.getElementById("weekly")
 const timeFrames = document.querySelectorAll(".timeframe")
-
+// fetch API json file
 fetch("../data.json")
   .then((res) => res.json())
   .then((data) => setTimeframes(data))
-// console.log(triggerBtn)
-timeFrames.forEach((timeframe) => {
-  //   console.log(timeframe.querySelector(".current"))
-  //   console.log(timeframe.querySelector(".previous"))
-})
-function setTimeframes(ary) {
+// function setTimeframes
+function setTimeframes(dataJSON) {
   triggerBtn.forEach((btn) => {
+    // btn.dataset.id === "weekly" ? btn.classList.add("selected-btn") : null
+    selectionBtn.classList.add("selected-btn")
     btn.addEventListener("click", () => {
-      ary.forEach((ar, index) => {
-        if (ar.title === timeFrames[index].dataset.id) {
+      selectionBtn.classList.remove("selected-btn")
+      dataJSON.forEach((ar, index) => {
+        const currentTimeframe = timeFrames[index]
+        if (ar.title === currentTimeframe.dataset.id) {
           for (const property in ar.timeframes) {
             if (property === btn.dataset.id) {
-              console.log(ar.timeframes[property])
-              timeFrames[index].querySelector(
-                ".current"
-              ).textContent = `${ar.timeframes[property].current}hrs`
+              const current = currentTimeframe.querySelector(".current")
+              const previous = currentTimeframe.querySelector(".previous")
+              const currentJSON = ar.timeframes[property].current
+              const previousJSON = ar.timeframes[property].previous
+              current.textContent = `${currentJSON}hrs`
               if (property === `daily`) {
-                timeFrames[index].querySelector(
-                  ".previous"
-                ).textContent = `Last Day - ${ar.timeframes[property].previous}hrs`
+                previous.textContent = `Last Day - ${previousJSON}hrs`
               } else if (property === `weekly`) {
-                timeFrames[index].querySelector(
-                  ".previous"
-                ).textContent = `Last Week - ${ar.timeframes[property].previous}hrs`
+                previous.textContent = `Last Week - ${previousJSON}hrs`
               } else {
-                timeFrames[index].querySelector(
-                  ".previous"
-                ).textContent = `Last Month - ${ar.timeframes[property].previous}hrs`
+                previous.textContent = `Last Month - ${previousJSON}hrs`
               }
             }
           }
