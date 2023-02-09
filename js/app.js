@@ -3,7 +3,7 @@ const triggerBtn = document.querySelectorAll(".routine-btn")
 const selectionBtn = document.getElementById("weekly")
 const timeFrames = document.querySelectorAll(".timeframe")
 // fetch API json file
-fetch("../data.json")
+fetch("./data.json")
   .then((res) => res.json())
   .then((data) => setTimeframes(data))
 // function setTimeframes
