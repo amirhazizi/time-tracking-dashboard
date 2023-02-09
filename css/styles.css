@@ -851,8 +851,16 @@ html {
   font-size: 1.37rem;
 }
 
+* {
+  transition: all 200ms linear;
+}
+
 main {
   display: grid;
+}
+
+.hours-spend {
+  font-size: 1.85rem;
 }
 
 @media (min-width:976px) {
@@ -865,6 +873,10 @@ main {
   .user-title {
     font-size: 1.9rem;
     line-height: 1.2;
+  }
+
+  .hours-spend {
+    font-size: 2.7rem;
   }
 }
 
@@ -880,12 +892,32 @@ main {
     margin-bottom: 0px;
   }
 
+  .lg\:mb-1 {
+    margin-bottom: 0.25rem;
+  }
+
   .lg\:mb-4 {
     margin-bottom: 1rem;
   }
 
   .lg\:mr-5 {
     margin-right: 1.25rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .lg\:mt-1 {
+    margin-top: 0.25rem;
+  }
+
+  .lg\:-mt-1 {
+    margin-top: -0.25rem;
   }
 
   .lg\:h-1 {
@@ -916,6 +948,10 @@ main {
     height: 100%;
   }
 
+  .lg\:h-3\/4 {
+    height: 75%;
+  }
+
   .lg\:max-w-3xl {
     max-width: 48rem;
   }
@@ -932,6 +968,10 @@ main {
     align-items: flex-start;
   }
 
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
   .lg\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0px * var(--tw-space-x-reverse));
@@ -944,22 +984,16 @@ main {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-  }
-
-  .lg\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-  }
-
   .lg\:space-y-1 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
   }
 
   .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]) {

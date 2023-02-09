@@ -10,8 +10,16 @@ html {
     font-size: 1.37rem;
 }
 
+* {
+    transition: all 200ms linear;
+}
+
 main {
     display: grid;
+}
+
+.hours-spend {
+    font-size: 1.85rem;
 }
 
 @media (min-width:976px) {
@@ -25,6 +33,10 @@ main {
         font-size: 1.9rem;
         line-height: 1.2;
 
+    }
+
+    .hours-spend {
+        font-size: 2.7rem;
     }
 
 }
