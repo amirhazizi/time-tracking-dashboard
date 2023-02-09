@@ -879,6 +879,11 @@ main {
   }
 }
 
+.hover\:bg-cl_Desaturatedblue:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(235 45% 61% / var(--tw-bg-opacity));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
